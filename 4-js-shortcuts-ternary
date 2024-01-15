@@ -1,0 +1,47 @@
+const money = 150;
+const active = true;
+let food;
+
+if(money > 100){
+    food = 'biryani';
+}else{
+    food = 'alur vorta';
+}
+
+// ternary shorcut if else condition
+// condition ? true value : false value
+let foods = money > 100 ? 'biryani' : 'alur vorta';
+
+if(active === true){
+    cssClass = 'active';
+}
+else{
+    cssClass = 'inactive';
+}
+
+// ternary/ shorcut
+
+const cssClass = active ? 'active' : 'inactive';
+
+active ? displayUser() : hideUser()  // active jodi sotto hoy tiale displayUser() function execute hobe r jodi mitha hoy taile hideUser() execute hobe
+
+//
+active && displayUser() // active jodi sotto hoy tiale displayUser() function execute hobe, aikhane ekta condition kaj korbe ternaryr moto 2 ta lageh nah
+
+//
+const x = active && 5;
+const y = active || 5; // active er value true hoile active print hobe r jodi active er value false hoy taile 5 print hobe, karon 5 er aageh or symbol dear karone 5 y er default valu hisabe kaj korbe
+
+// string to number
+const number = '45'; // number variable er value double cotation er vitor rakhar karone aita ekta string hoye geche 
+const number2 = +'45'; // number2 variable er value er aageh + sign deuar karone string number hoye geche
+
+// number to string
+
+const numText = 45 + ''; // numText variable er sathe empty sting jug kore number k string e convert kora hoiche
+
+function add(num1, num2 = 5){
+    // num2 = num2 || 5; default parameter pass
+    return num1 + num2;
+}
+add(45);
